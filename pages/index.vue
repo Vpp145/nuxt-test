@@ -13,6 +13,6 @@
 /* use to page styles or import from external files */
 
 h1 {
-  font-family: "FarAwayGalaxy", sans-serif;
+  font-family: sans-serif;
 }
 </style>
