@@ -7,15 +7,15 @@ export default defineNuxtConfig({
     css: {
       preprocessorOptions: {
         scss: {
-          additionalData: '@import "@/assets/scss/colors.scss";',
+          additionalData: '@use "@/assets/scss/colors.scss";',
         },
       },
     },
   },
   postcss: {
     plugins: {
-      "postcss-nested": {},
-      "postcss-custom-media": {},
+      // "postcss-nested": {},
+      // "postcss-custom-media": {},
     },
   },
   // hooks: {
