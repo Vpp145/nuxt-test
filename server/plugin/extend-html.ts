@@ -3,7 +3,7 @@ export default defineNitroPlugin((nitroApp) => {
     // This will be an object representation of the html template.
     console.log(html);
     html.head.push(
-      `<meta name="description" content="My custom description" />`
+      `<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">`
     );
   });
   // You can also intercept the response here.
