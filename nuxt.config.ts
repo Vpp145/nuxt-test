@@ -3,6 +3,7 @@ export default defineNuxtConfig({
   compatibilityDate: "2024-04-03",
   devtools: { enabled: true },
   css: ["@/assets/scss/main.scss"],
+
   vite: {
     css: {
       preprocessorOptions: {
@@ -12,17 +13,13 @@ export default defineNuxtConfig({
       },
     },
   },
+
   app: {
     //If you change the name property, you also have to rename the CSS classes accordingly.
     pageTransition: { name: "page", mode: "out-in" },
     layoutTransition: { name: "layout", mode: "out-in" },
   },
-  postcss: {
-    plugins: {
-      // "postcss-nested": {},
-      // "postcss-custom-media": {},
-    },
-  },
+
   // hooks: {
   //   "build:manifest": (manifest) => {
   //     // find the app entry, css list
@@ -38,4 +35,12 @@ export default defineNuxtConfig({
   //     }
   //   },
   // },
+  postcss: {
+    plugins: {
+      // "postcss-nested": {},
+      // "postcss-custom-media": {},
+    },
+  },
+
+  modules: ["@pinia/nuxt"],
 });
