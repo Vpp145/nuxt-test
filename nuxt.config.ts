@@ -12,6 +12,11 @@ export default defineNuxtConfig({
       },
     },
   },
+  app: {
+    //If you change the name property, you also have to rename the CSS classes accordingly.
+    pageTransition: { name: "page", mode: "out-in" },
+    layoutTransition: { name: "layout", mode: "out-in" },
+  },
   postcss: {
     plugins: {
       // "postcss-nested": {},
